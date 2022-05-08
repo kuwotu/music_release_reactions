@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Twitter from "./Twitter";
 
 export default function Search() {
   const [songTitle, setSongTitle] = useState("");
@@ -106,6 +107,7 @@ export default function Search() {
       <div>song ID: {songID}</div>
       <div>song release date: {releaseDate}</div>
       <div>songString = {songPath}</div>
+      <Twitter songTitle={songTitle} songArtist={songArtist} songID={songID} />
     </div>
   );
 }
